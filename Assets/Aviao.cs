@@ -50,7 +50,9 @@ public class Aviao : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D colisao){
-        this.fisica.simulated = false;
-        this.diretor.FinalizarJogo();
+        if(colisao.gameObject.tag != "teto"){
+            this.fisica.simulated = false;
+            this.diretor.FinalizarJogo();
+        }
     }
 }

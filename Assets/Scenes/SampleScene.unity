@@ -246,7 +246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115303316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.37, y: 1.46, z: 0.02549398}
+  m_LocalPosition: {x: 12.37, y: -8.3, z: 0.02549398}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -973,7 +973,7 @@ GameObject:
   - component: {fileID: 468220185}
   m_Layer: 0
   m_Name: teto
-  m_TagString: Untagged
+  m_TagString: teto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1519,9 +1519,10 @@ GameObject:
   m_Component:
   - component: {fileID: 597073612}
   - component: {fileID: 597073611}
+  - component: {fileID: 597073613}
   m_Layer: 0
   m_Name: Barreira
-  m_TagString: Untagged
+  m_TagString: Apagar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1539,7 +1540,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.35631847, y: 1.0689518}
+  m_Offset: {x: 0.35631847, y: -1.9166546}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1550,7 +1551,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.712637, y: 11.570747}
+  m_Size: {x: 1.712637, y: 17.541958}
   m_EdgeRadius: 0
 --- !u!4 &597073612
 Transform:
@@ -1560,13 +1561,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597073610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.37, y: -0.99, z: -5.1480236}
+  m_LocalPosition: {x: -30.49, y: -0.99, z: -5.1480236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &597073613
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597073610}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &946133644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1896,7 @@ GameObject:
   - component: {fileID: 1063863315}
   m_Layer: 0
   m_Name: teto (1)
-  m_TagString: Untagged
+  m_TagString: teto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3019,14 +3041,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5957057021444661870, guid: 286f3d2b68efb26ea9fc087156050596, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 5957057021444661870, guid: 286f3d2b68efb26ea9fc087156050596, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.2
-      objectReference: {fileID: 0}
     - target: {fileID: 5957057021641857715, guid: 286f3d2b68efb26ea9fc087156050596, type: 3}
       propertyPath: m_Name
       value: obstaculo
@@ -3037,11 +3051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5957057021641857717, guid: 286f3d2b68efb26ea9fc087156050596, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7616198
+      value: -1.16
       objectReference: {fileID: 0}
     - target: {fileID: 5957057021641857717, guid: 286f3d2b68efb26ea9fc087156050596, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.36
+      value: -6.37
       objectReference: {fileID: 0}
     - target: {fileID: 5957057021641857717, guid: 286f3d2b68efb26ea9fc087156050596, type: 3}
       propertyPath: m_LocalPosition.z
