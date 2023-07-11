@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Diretor : MonoBehaviour { 
-    [SerializeField] private GameObject imagemGameOver;
+    [SerializeField] 
+    private GameObject imagemGameOver;
+    
     private Aviao aviao;
-
+    
+    public int pontos;
+    public Text texto_pontos;
+    
     public void FinalizarJogo(){
         Time.timeScale = 0;
         //habilitar a imagem Game Over
@@ -26,6 +33,8 @@ public class Diretor : MonoBehaviour {
     public void ReiniciarJogo() {
         this.imagemGameOver.SetActive(false);
         Time.timeScale = 1;
+        this.pontos = 0;
+        this.texto_pontos.text = pontos.ToString();
         this.aviao.Reiniciar();
         this.DestruirObstaculos();
     }

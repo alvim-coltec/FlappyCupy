@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Apagar
   - teto
+  - ponto++
   layers:
   - Default
   - TransparentFX
